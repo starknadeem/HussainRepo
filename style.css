@@ -1,0 +1,827 @@
+*{
+    /* these things available for all html elements */
+    /* spacing html k element k andar space */
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    /* this font family will be applicable for all the contents on our webpage */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* class call with dot*/
+.navbar{
+    display: flex;
+    align-items: centre;
+    padding: 20px;
+}
+/* nav tag in html  */
+nav{
+    flex: 1;
+    /* move text to the right Home Product About Contact Etc */
+    text-align: right;
+}
+nav ul{
+    /* move . to the right */
+    display: inline-block;
+    /* no bullets Home Product About Contact Etc */
+    list-style-type: none;
+    
+}
+nav ul li{
+    /* move text to the Horizantal header Top Home Product About Contact Etc */
+    display: inline-block;
+    /* it is horizantal styles between all these menu Home Product About Contact Etc */
+    margin-right: 20px;
+
+}
+/* nav ul li :hover{
+    background  :#7a3030 ;
+} */
+/* anchor tag  */
+a{
+    text-decoration: none;
+    color:  #555;
+}
+/* paragraph */
+p{
+    color: #555;
+    /* grey #555 */
+    margin: 25px ;
+}
+
+/* div class conatiner  */
+.container{
+    max-width: 1300px;
+    /* redstore logo move to right from top  */
+    margin: auto ;
+    /* logo redstore */
+    /* and equal space from left and right  */
+    padding-left: 25px;
+    /* home product etc from right space  */
+    padding-right: 25px;
+    
+    
+}
+.row{
+    /* football pic move  */
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+    
+}
+
+.newdiv{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+    padding-left: 10%;
+}
+
+.col-2{
+    /* both colums will occupy  50% of space */
+    flex-basis: 50%;
+    min-width: 300px;
+}
+
+.col-2 img{
+    max-width: 100%;
+    /* padding from top and bottom 50px and and zero from left and right  */
+    /* padding :50px 0; */
+
+}
+
+.col-2 h1{
+    font-size: 50px;
+    /* spacing between them */
+    line-height: 60px;
+    margin: 25px;
+}
+
+.btn{
+    display: inline-block;
+    background: #ff523b;;
+    color:white;
+    /* spacing  */
+    padding: 8px 10px;
+    margin: 10px ;
+    /* circle explore now  */
+    border-radius: 30px;
+    /* home page and background also button transition  */
+    transition: 0.5s;
+}
+.btn:hover{
+    /* hover effect on explore more btn */
+    /* hover background color  */
+    background  :#563434 ;
+    
+
+}
+.header{
+    /* background color header */
+    /* background : radial-gradient(#fff,#ffd6d6) */
+    /* 1st color code and second color code  */
+    background : radial-gradient(#fff,#ffd6d6)
+}
+.header .row{
+        
+    margin-top: 70px;
+    /* header section completed top all css  */
+}
+
+.categories{
+    margin: 70px 0;
+    
+}
+ .col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    
+}
+.col-3 img{
+    /* categories image width  */
+    width: 100%;
+}
+.small-conatiner{
+
+    max-width: 1080px;
+    /* categories pic move to middle */
+    margin: auto;
+    /* from left and right space  */
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+
+/* h2{
+    padding-left: 175px;
+} */
+.col-4{
+    /* red tshirt adjusting */
+    flex-basis: 20%;
+    min-width: 200px;
+    margin-bottom: 50px;
+    padding: 10px;
+    /* featured product pic transition move to y axis transition  */
+    transition: transform 0.5s;
+  
+    
+}
+.col-4 img{
+    /* rrd tshirt width pic  */
+    width: 100% ;
+}
+/* <h2 class="title" >Featured Products</h2> */
+.title{
+    text-align: center;
+    /* 80px space from the bottom Featured product */
+    margin: 0 auto 80px;
+    position: relative;
+    /* red line height  */
+    line-height: 60px;
+    color: #555;
+}
+/* bottom line feaatured product */
+.title::after{
+    /* empty content  */
+    content: '';
+    background : #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    /* it will be on centre from x axis red line featured product */
+    transform: translate(-50%);
+} 
+
+
+/* Css for the product title h4 featured products */
+/* red printed t shirt */
+h4{
+    color: #555; 
+     font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px ;
+}
+.rating {
+    color: #ff523b;
+}
+/* hover effect on these products pics */
+.col-4:hover{
+    /* it will move -5 pixel in y axis  */
+    /* transform: translateY(-5px); */
+    transform:translateY(-5px);
+}
+
+
+
+
+
+
+
+/* ----------------Offer---------------- */
+/* class name offer */
+/* css file offer */
+.offer{
+    background :radial-gradient(#fff,#ffd6d6);
+    /* we need some space margin from top  */
+    margin-top: 80px;  
+    padding: 30px 0;
+    
+}
+
+.col-2 .offer-img{
+    /* image size has been reduced */
+    padding: 110px;
+    padding-top: 40px;
+}
+small{
+    color: #555;
+    padding: auto;
+    padding-top: 10%;
+}
+
+
+
+
+
+
+
+
+
+/* ------------Testimonial------------ */
+.testimonial{
+    padding-top: 100px ;
+    padding-left: 130px;
+    padding-right: 130px;
+}
+
+.testimonial .col-3{
+    /* p text move to centre sean parker text  */
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0, 0.1) ;
+    /* hand pointer  */
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.testimonial .col-3 img{
+    margin-top: 20px;
+    width: 50px;
+    /* picture square to circle move testimonial sean parker */
+    border-radius: 50%;
+}
+
+.testimonial .col-3:hover{
+    transform: translateY(-10px);
+}
+
+/* now for quote color font size adjusting */
+.fa.fa-quote-left{
+    font-size: 34px;
+    color: #ff523b;
+}
+/* for paragrpgh changing */
+.col-3 p{
+    font-size: 12px;
+    margin: 12px 0;
+    color: #777;
+}
+
+.testimonial .col-3 h3{
+    font-weight: 600;
+    color: #555;
+    font-size: 16px;
+
+}
+
+
+
+
+
+/* Brands */
+.brands{
+    /* space from footer Mabel Joe  */
+    margin: 100px auto;
+
+}
+.col-5
+{
+    /* space between oppo cocacola paypall  */
+    width: 160px;
+}
+
+.col-5 img{
+    /* width size of image oppo cocacola paypall  */
+    width: 100%;
+    cursor: pointer;
+    /* All logo color is grey  */
+    filter: grayscale(100%);
+}
+
+.col-5 img:hover{
+    /* it will change the color of image oppo cocacola paypall */
+    filter: grayscale(0);
+}
+
+
+
+
+
+
+/* ----------Footer---------- */
+.footer{
+    margin-top: 50px;
+    background-color: black;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+
+.footer p{
+    color: #8a8a8a;
+    /* text-size-adjust: ; */
+}
+.footer h3{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.footer-col-1 , .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+
+.footer-col-3 , .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+.app-logo{
+    margin-top: 20px;
+
+}
+.app-logo img{
+    width: 140px;
+    
+}
+
+/* Finals */
+/* 1-09-57 */
+
+
+/* Footer Copyright */
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    /* white line color thin top on copyright */
+    height:1px;
+    margin: 20px 0;
+}
+
+.Copyright {
+    text-align: center;
+}
+
+
+
+/* now for responsive for nav bar menutoggle  */
+.menu-icon{
+    width: 28px;
+    margin-left: 20px;
+    display: none;
+}
+
+/* media query for menu  */
+/* display this menu in small screen size */
+@media only screen and (max-width:800px){
+    nav ul {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100px;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px ;
+        margin-top: 10px ;
+        margin-bottom: 10px ;
+    }
+    /* anchor tag it will be white color  */
+    nav ul li a{
+        color:#fff;
+    }
+    .menu-icon{
+        display: block;
+        cursor: pointer;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Products HTML Category */
+/* All Products  */
+.row-2{
+    justify-content:space-around;
+    /* justify-content: space-between; */
+    margin: 100px auto 50px; 
+}
+
+select{
+    /* default sorting product select border  */
+    border: 1px solid #ff523b;
+    /* padding of border between them  */
+    padding: 5px;
+}
+select:focus{
+    /* if i select any option the border remain red  */
+    outline: none;
+
+}
+
+
+
+/* page btn product section last top on footer  */
+.page-btn{
+    margin: 0 auto 80px;
+    
+}
+
+
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    
+}
+.page-btn span:hover{
+    background: #ff523b;
+    /* color of numbers into white  */
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Account page  */
+.account-page{
+    padding: 50px 0;
+    /* background image color  */
+    background :radial-gradient(#fff,#ffd6d6); 
+
+}
+
+/* form background in account main page  */
+.form-container{
+    background: #fff;
+    width: 300px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+    margin: auto;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1 );
+    /* login registration page hidden  */
+    overflow: hidden;
+    
+
+}
+
+
+
+
+
+
+.form-container span{
+    /* login register have some space  */
+    font-weight: bold;
+    padding :0 10px;
+    color: #555;
+    cursor: pointer;
+    width: 100px;
+    display: inline-block;
+
+}
+
+
+.form-btn{
+    display: inline-block;
+
+}
+.form-container form{
+     max-width: 300px;
+     /* padding of username email password is zero */
+     padding: 0 20px;
+     position: absolute;
+     top: 130px;
+     transition: transform 1s;
+
+}
+
+form input{
+    width: 100%;
+    height: 30px;
+    /* spaces between username email password */
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+
+}
+
+form .btn{
+    /* Register button  */
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+form .btn:focus{
+    outline: none;
+}
+
+
+/* form login register move to left  */
+/* left login  */
+/* right register */
+#LoginForm{
+    left:-300px;
+     
+}
+#RegForm{
+    left: 0;
+}
+
+/* decrease the font size of anchor tag  */
+form a{
+    /* forget password decrease size  */
+    font-size: 12px;
+}
+
+
+#Indicator{
+    /* red line on botttom of register */
+    width: 100px;
+    border: none;
+    background:#ff523b;
+    height: 3px;
+    margin-top: 8px;
+    transform: translateX(100px);
+    /* red line on login registration move  */
+    transition: transform 1s; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* css for cart product quatity subtotal  */
+/* cart items  */
+.cart-page {
+    /* margin from top  */
+    /* top left bottom right  */
+    margin: 80px auto;
+    max-width: 1000px;
+}
+
+.cart-page p {
+    margin: 0px !important;
+}
+
+/* table is taking full width of page  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* cart-info red printed t shirt cart  */
+.cart-info {
+    /* this text is comming in right side red printed t shirt and price  */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+    color: #fff;
+    background: #ff523b;
+    font-weight: normal;
+}
+
+td {
+    padding: 10px 5px;
+
+}
+
+
+td input {
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+
+td a {
+    color: #ff523b;
+    font-size: 12px;
+
+
+}
+
+td img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+
+}
+
+.total-price {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total-price table {
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+
+td:last-child {
+    text-align: right;
+}
+
+th:last-child {
+    text-align: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width : 600px){
+    .row{
+        text-align: center;
+    }
+    .col-2, .col-3, .col-4{
+        flex-basis: 100%;
+    }
+}
+
